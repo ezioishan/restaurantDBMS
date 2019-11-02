@@ -1,0 +1,14 @@
+<div class="resList table-hover">
+{{#each res_data}}
+    <div class="resInfo card">
+    {{#each this}}
+        <p>{{this}}</p>
+    {{/each}}
+    <form action="./orders" method="GET">
+        <input type="submit" value="Select">
+    </form>
+    </div>
+{{else}}
+    <h3>Sorry No Restaurants are added!</h3>
+{{/each}}
+</div>
