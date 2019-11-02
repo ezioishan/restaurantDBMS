@@ -1,0 +1,28 @@
+<div class="container card pt-5 pb-5 ">
+<table class="table table-dark table-hover rounded-lg">
+    <thead>
+        <tr>
+            <th>DISH_ID</th>
+            <th>DISH</th>
+            <th>CALORIES</th>
+            <th>PRICE</th>
+        </tr>
+    </thead>
+    <tbody>
+    {{#each dish_data}}
+        <tr>
+            {{#each this}}
+                <td>{{this}}</td>
+            {{/each}}
+            <td>
+                <form action="./orders/{{this.[0]}}" method="POST">
+                    <input type="submit" class="btn btn-primary" value="+">
+                </form>
+            </td>
+        </tr>
+    {{else}}
+        <h3>Sorry No Food Items added!</h3>
+    {{/each}}
+    </tbody>
+</table>>
+</div>
