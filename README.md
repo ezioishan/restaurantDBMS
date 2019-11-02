@@ -1,2 +1,2 @@
 # restaurantDBMS
-A restaurant DBMS project made for CSE2004 DBMS course
+A Restraunt Management System using Mysql and NodeJs
